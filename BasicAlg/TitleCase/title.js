@@ -9,19 +9,14 @@ function splitLower (string) {
 
 }
 
-function upperCaseChar (string) {
-	
-	return string.charAt(0).toUpperCase() + string.slice(1);
-
-}
 
 function upperArray (arr) {
 
-	for (i = 0; i < arr.length; i++) {
+	return arr.map(function (string) {
 
-		arr[i] = upperCaseChar(arr[i]);
+		return string.charAt(0).toUpperCase() + string.slice(1);
 
-	}
+	});
 
-	return arr;
+
 }
