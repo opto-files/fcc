@@ -1,0 +1,114 @@
+function remNonAlphaNum (string) {
+
+	var re = /[\W_]/gi;
+	return string.replace(re, '');
+
+}
+
+function reverseString (string) {
+
+	return string.split('').reverse().join('');
+
+}
+
+function processString (string) {
+
+	return reverseString(remNonAlphaNum(string)).toLowerCase();
+
+}
+
+function palindrome (string) {
+
+	if (processString(string) == remNonAlphaNum(string).toLowerCase()) {
+
+		return true;
+	
+	} else {
+
+		return false;
+
+	}
+}
+
+// TESTS
+
+
+if (typeof(palindrome("eye") == "boolean")) {
+
+	console.log("Pass 1");
+
+} else {
+
+	console.log("Fail 1");
+
+}
+
+if (palindrome("eye")) {
+
+	console.log("Pass 2");
+
+} else {
+
+	console.log("Fail 2");
+
+}
+
+
+if (palindrome("_eye")) {
+
+	console.log("Pass 3");
+
+} else {
+
+	console.log("Fail 3");
+
+}
+
+
+if (palindrome("race car")) {
+
+	console.log("Pass 4");
+} else {
+
+	console.log("Fail 4");
+
+}
+
+if (palindrome("not a palindrome") === false) {
+
+	console.log("Pass 5");
+
+} else {
+
+	console.log("Fail 5");
+}
+
+
+if (palindrome("A man, a plan, a canal. Panama")) {
+
+	console.log("Pass 6");
+} else {
+
+	console.log("Fail 6");
+
+}
+
+
+if (palindrome("never odd or even")) {
+
+	console.log("Pass 7");
+} else {
+
+	console.log("Fail 7");
+
+}
+
+
+if (palindrome("nope") === false) {
+
+	console.log("Pass 8");
+
+} else {
+
+	console.log("Fail 8");
+}
