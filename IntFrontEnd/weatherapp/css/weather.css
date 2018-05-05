@@ -1,0 +1,49 @@
+body {	
+	background-color: #e7e8e9;
+}
+
+@font-face {
+
+	font-family: 'Apercu';
+	src: url('../font/apercu_mono_pro.otf');
+}
+
+.wrapper {
+
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+		
+	
+}
+
+.inner {
+	display: flex;
+	justify-content: center;
+	font-family: 'Apercu';
+	margin-bottom: 15px;
+	
+}
+
+.buttons {
+	display: inline-block;	
+	margin-left: 164px;
+}
+
+button {
+
+	background-color: #e7e8e9;
+	color: #151616;
+	padding: 10px 30px;
+	border: 2px solid #151616;
+	border-radius: 13px;
+	margin: 0 10 0 10;
+}
+
+button:hover {
+
+	background-color: #151616;
+	color: #e7e8e9;
+}
+
+
